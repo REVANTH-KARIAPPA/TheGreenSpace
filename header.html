@@ -1,4 +1,3 @@
-<!-- header.html -->
 <header>
     <h1>The Green Space</h1>
     <nav>
@@ -14,5 +13,21 @@
             </div>
         </ul>
     </nav>
-</header>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Get current page URL
+            var path = window.location.pathname;
+            // Remove leading and trailing slashes
+            var page = path.split('/').pop().replace('.html', '');
 
+            // Find the link that matches the current page
+            var links = document.querySelectorAll('nav ul li a');
+            links.forEach(function (link) {
+                var href = link.getAttribute('href').replace('.html', '');
+                if (href === page || (page === '' && href === 'index')) {
+                    link.classList.add('current');
+                }
+            });
+        });
+    </script>
+</header>

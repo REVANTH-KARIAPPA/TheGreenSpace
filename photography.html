@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Green Space Designing</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Load header -->
+    <div id="header-placeholder"></div>
+
+    <main class="mainPhotography">
+        <section class="sectionPhotography">
+            <img class="imgPhotography" width="565" height="340" src="images/Photography/image1.jpg" alt="Beautiful Garden">
+        </section>
+        <section class="sectionPhotography">
+            <img class="imgPhotography" width="565" height="340" src="images/Photography/image2.jpg" alt="Beautiful Garden">
+        </section>
+        <section class="sectionPhotography">
+            <img class="imgPhotography" width="565" height="340" src="images/Photography/image3.jpg" alt="Beautiful Garden">
+        </section>
+        <section class="sectionPhotography">
+            <img class="imgPhotography" width="565" height="340" src="images/Photography/image4.jpg" alt="Beautiful Garden">
+        </section>
+        <section class="sectionPhotography">
+            <img class="imgPhotography" width="565" height="340" src="images/Photography/image5.jpg" alt="Beautiful Garden">
+        </section>
+        <section class="sectionPhotography">
+            <img class="imgPhotography" width="565" height="340" src="images/Photography/image6.jpg" alt="Beautiful Garden">
+        </section>
+        <section class="sectionPhotography">
+            <img class="imgPhotography" width="565" height="340" src="images/Photography/image7.jpg" alt="Beautiful Garden">
+        </section>
+        <section class="sectionPhotography">
+            <img class="imgPhotography" width="565" height="340" src="images/Photography/image8.jpg" alt="Beautiful Garden">
+        </section>
+        <section class="sectionPhotography">
+            <img class="imgPhotography" width="565" height="340" src="images/Photography/image9.jpg" alt="Beautiful Garden">
+        </section>
+        <section class="sectionPhotography">
+            <img class="imgPhotography" width="565" height="340" src="images/Photography/image10.jpg" alt="Beautiful Garden">
+        </section>
+        <section class="sectionPhotography">
+            <img class="imgPhotography" width="565" height="340" src="images/Photography/image11.jpg" alt="Beautiful Garden">
+        </section>
+
+    </main>
+
+    <footer>
+        <p>Follow us on:</p>
+    <ul>
+        <li><a href="https://youtube.com/@monicakr9445?si=YrbEgc7a3el41KAU">YouTube</a></li>
+        <li><a href="https://www.instagram.com/the.green.space3?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram<a>
+        </li>
+    </ul>
+    </footer>
+    <script>
+        // JavaScript to load header
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header-placeholder").innerHTML = data;
+            });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

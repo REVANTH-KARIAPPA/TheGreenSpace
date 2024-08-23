@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Green Space Designing</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Load header -->
+    <div id="header-placeholder"></div>
+
+    <main>
+        <section>
+            <!-- Page-specific content goes here -->
+            <h2>Welcome to The Green Space Designing</h2>
+            <p>Explore our latest garden design projects and get inspired to create your own green space.</p>
+            <img src="images/image1.jpg" alt="Beautiful Garden">
+        </section>
+    </main>
+
+    <footer>
+        <p>Follow us on:</p>
+        <ul>
+            <li><a href="#">Facebook</a></li>
+            <li><a href="#">Instagram</a></li>
+            <li><a href="#">Twitter</a></li>
+        </ul>
+    </footer>
+    <script>
+        // JavaScript to load header
+        fetch("header.html")
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById("header-placeholder").innerHTML = data;
+            });
+    </script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

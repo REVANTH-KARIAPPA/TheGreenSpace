@@ -1,0 +1,115 @@
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f5f5f5;
+}
+
+header {
+    background-color: #ffffff;
+    padding: 20px;
+    text-align: center;
+    border-bottom: 2px solid #4CAF50;
+}
+
+header h1 {
+    margin: 0;
+    color: #4CAF50;
+    font-size: 35px;
+    text-align: left;
+    margin-left: 30px;
+    font-family: Garamond, serif;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    /* Allows the content to wrap to the next line */
+    justify-content: center;
+    /* Centers the row horizontally */
+    gap: 20px;
+    /* Adds space between the columns */
+    margin: 0 auto;
+    /* Centers the row container on the page */
+    max-width: 1280px;
+    /* Ensures the row doesn’t exceed the container width */
+}
+
+.column {
+    flex: 1 1 600px;
+    /* Ensures that each section takes up 600px width and adjusts responsively */
+    max-width: 600px;
+    /* Limits the maximum width of each section to 600px */
+    box-sizing: border-box;
+    /* Includes padding and borders in the element's total width */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0 0;
+}
+
+.nav-left {
+    display: flex;
+    margin-left: 80px;
+    
+}
+
+.nav-right {
+    display: flex;
+    margin-left: auto;
+}
+
+.nav-left,
+.nav-right {
+    display: flex;
+}
+
+.nav-left li,
+.nav-right li {
+    margin-right: 15px;
+}
+
+.nav-right li {
+    margin-left: auto;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: #4CAF50;
+}
+
+main {
+    padding: 20px;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+footer ul li {
+    display: inline;
+    margin-right: 10px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #4CAF50;
+}
